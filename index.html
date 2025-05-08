@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+	<!-- bootstrap icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+	<!-- custom -->
+	<link rel="stylesheet" type="text/css" href="./styles/main.css">
+	<link rel="stylesheet" type="text/css" href="./styles/animation.css">
+</head>
+
+<body class="container bg-dark overflow-visible" data-bs-theme="dark">
+
+	<main class="container bg-medium mb-5">
+
+		<nav class="mt-5 pt-3 px-2 px-lg-5">
+			<div class="nav nav-underline f-one rounded-pill justify-content-center border border-light border-opacity-25 mt-4 py-2" id="nav-tab" role="tablist">
+				<button class="nav-link px-2 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+					Home
+				</button>
+				<button class="nav-link px-2" id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about" type="button" role="tab" aria-controls="nav-about" aria-selected="false">
+					About
+				</button>
+				<button class="nav-link px-2" id="nav-porfolio-tab" data-bs-toggle="tab" data-bs-target="#nav-porfolio" type="button" role="tab" aria-controls="nav-porfolio" aria-selected="false">
+					Portfolio
+				</button>
+				<button class="nav-link px-2" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+					Contact
+				</button>
+			</div>
+		</nav>
+
+		<div class="tab-content mx-md-2 mx-lg-5 px-2 px-md-0 px-lg-4 pb-5" id="nav-tabContent">
+			<div class="tab-pane fade show active mt-0 mt-lg-5 py-5" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+				<div class="position-absolute z-2">
+					<div class="text-container position-relative text-center">
+						<h1 class="fw-normal mb-0">
+							<span class="name f-one d-block text-capitalize mb-2">Agustina Díaz</span>
+						</h1>
+						<hr />
+						<h2 class="fw-normal mb-0">
+							<span class="profession d-block f-mono lh-1 text-yellow mt-2 mb-0">Web Developer</span>
+						</h2>
+					</div>
+				</div>
+				<div class="row position-relative pills-container d-flex justify-content-center align-items-center mt-4 mb-5">
+					<div class="d-none d-md-block vertical-pill position-relative col-7 col-md-4 col-xl-3 align-self-stretch p-0">
+						<img class="w-100 border-150 opacity-25" src="./images/curves-dark.png" alt=" ">
+					</div>
+					<div class="vertical-pill position-relative col-7 col-md-4 col-xl-3 border border-light border-opacity-25 border-150 p-0">
+						<img class="w-100 border-150 mt-auto" src="./images/portrait.png" alt=" ">
+					</div>
+					<div class="d-none d-lg-block vertical-pill position-relative col-7 col-md-4 col-xl-3 align-self-stretch p-0">
+						<img class="w-100 border-150 opacity-25" src="./images/curves-color.png" alt=" ">
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab" tabindex="0">
+				<div class="col-12 col-lg-10 col-xl-8 col-xxl-6 mx-auto mt-4">
+					<div class="accordion accordion-flush" id="AboutMeAccordion">
+
+						<div class="accordion-item mb-4">
+							<h2 class="accordion-header">
+								<button class="accordion-button fw-medium rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseInfo" aria-expanded="true" aria-controls="panelsStayOpen-collapseInfo">
+									<i class="bi bi-person-circle me-2"></i>Personal Information
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseInfo" class="accordion-collapse collapse show" data-bs-parent="#AboutMeAccordion">
+								<div class="accordion-body">
+									<div class="row">
+										<div class="col-12 col-md-6">
+											<h3 class="f-one mb-0">Agustina Díaz</h3>
+											<p class="opacity-75 mb-0"><i class="bi bi-geo-alt-fill opacity-75 me-2"></i>Argentina</p>
+											<p class="fw-medium text-uppercase border-bottom border-light border-opacity-25 mt-4 mb-3"><i class="bi bi-translate me-2"></i>Languages</p>
+											<ul class="list-unstyled">
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">Spanish</p>
+														<i class="bi bi-star-fill text-end text-yellow"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-yellow" style="width: 100%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">English</p>
+														<i class="bi bi-star-fill text-end text-yellow"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-yellow" style="width: 100%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between opacity-75">
+														<p class="mb-0">Portuguese</p>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink-dark" style="width: 25%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between opacity-75">
+														<p class="mb-0">French</p>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink-dark" style="width: 10%"></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="col-12 col-md-6">
+											<p class="fw-medium text-uppercase border-bottom border-light border-opacity-25 mt-4 mb-3"><i class="bi bi-person-heart me-2"></i>Soft Skills</p>
+											<ul class="list-unstyled">
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">Empathy</p>
+														<i class="bi bi-suit-heart-fill text-end text-yellow"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-yellow" style="width: 100%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">Multitasking</p>
+														<i class="bi bi-star-fill text-end text-yellow"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-yellow" style="width: 100%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0 me-1">Attention to Detail</p>
+														<i class="bi bi-star-fill text-end text-yellow"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-yellow" style="width: 100%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">Creativity</p>
+														<i class="bi bi-star-fill text-end text-yellow"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-yellow" style="width: 100%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0 me-1">Attentional capacity</p>
+														<i class="bi bi-star-fill text-end text-yellow"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-yellow" style="width: 100%"></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item mb-4">
+							<h2 class="accordion-header">
+								<button class="accordion-button fw-medium rounded-pill collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSkills" aria-expanded="false" aria-controls="panelsStayOpen-collapseSkills">
+									<i class="bi bi-gear-fill me-2"></i>Skills
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseSkills" class="accordion-collapse collapse" data-bs-parent="#AboutMeAccordion">
+								<div class="accordion-body">
+									<div class="row">
+										<div class="col-12 col-md-6">
+											<p class="fw-medium text-uppercase border-bottom border-light border-opacity-25 mt-4 mb-3"><i class="bi bi-code-slash me-2"></i>Front&#x2011;End</p>
+											<ul class="list-unstyled">
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">HTML 5</p>
+														<i class="bi bi-star-fill text-end text-yellow"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-yellow" style="width: 100%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">CSS 3</p>
+														<i class="bi bi-star-fill text-end text-yellow"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-yellow" style="width: 100%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">JavaScript</p>
+														<i class="bi bi-star text-end text-pink"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink" style="width: 65%"></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="col-12 col-md-6">
+											<p class="fw-medium text-uppercase border-bottom border-light border-opacity-25 mt-4 mb-3"><i class="bi bi-gear-wide-connected me-2"></i>Frameworks and Libraries</p>
+											<ul class="list-unstyled">
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">Bootstrap</p>
+														<i class="bi bi-star text-end text-pink"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink" style="width: 80%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">JQuery</p>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink-dark" style="width: 30%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">React</p>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink-dark" style="width: 10%"></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-6">
+											<p class="fw-medium text-uppercase border-bottom border-light border-opacity-25 mt-4 mb-3"><i class="bi bi-database-fill me-2"></i>Back&#x2011;End</p>
+											<ul class="list-unstyled">
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">Ruby</p>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink-dark" style="width: 35%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">PHP</p>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink-dark" style="width: 25%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">JAVA</p>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink-dark" style="width: 15%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">Python</p>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink-dark" style="width: 15%"></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="col-12 col-md-6">
+											<p class="fw-medium text-uppercase border-bottom border-light border-opacity-25 mt-4 mb-3"><i class="bi bi-tools me-2"></i>Other</p>
+											<ul class="list-unstyled">
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">SVN</p>
+														<i class="bi bi-star text-end text-pink"></i>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink" style="width: 75%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">WordPress</p>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink-dark" style="width: 35%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">Git</p>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink-dark" style="width: 30%"></div>
+													</div>
+												</li>
+												<li class="mb-3 px-sm-3">
+													<div class="d-flex justify-content-between">
+														<p class="mb-0">SQL</p>
+													</div>
+													<div class="progress bg-body-tertiary" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+														<div class="progress-bar bg-pink-dark" style="width: 30%"></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item mb-4">
+							<h2 class="accordion-header">
+								<button class="accordion-button fw-medium rounded-pill collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseExperience" aria-expanded="false" aria-controls="panelsStayOpen-collapseExperience">
+									<i class="bi bi-briefcase-fill me-2"></i>Experience <span class="opacity-50 small ps-2">(+3 years)</span>
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseExperience" class="accordion-collapse collapse" data-bs-parent="#AboutMeAccordion">
+								<div class="accordion-body pt-4">
+									<div class="mb-5">
+										<h5 class="text-uppercase fw-medium d-flex align-items-center border-bottom border-light border-opacity-25 mb-1"><i class="bi bi-code-slash text-yellow me-2"></i>Front&#x2011;End Developer</h5>
+										<div class="d-flex justify-content-between align-items-start mb-3">
+											<p class="text-yellow nowrap mb-0"><a class="text-pink" href="https://www.hogarth.com/" target="_blank">Hogarth<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+											<p class="opacity-75 small text-end mb-0">since October 2021</p>
+										</div>
+										<div class="row">
+											<div class="col-12 col-md-6">
+												<h6 class="text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><i class="bi bi-person-fill pe-2"></i>Soft Skills</h6>
+												<ul class="list-unstyled opacity-75 ps-1">
+													<li><i class="bi bi-arrow-return-right pe-2"></i>Teamwork</li>
+													<li><i class="bi bi-arrow-return-right pe-2"></i>Creativity</li>
+													<li><i class="bi bi-arrow-return-right pe-2"></i>Attention to Detail</li>
+													<li><i class="bi bi-arrow-return-right pe-2"></i>Work Under Pressure</li>
+													<li><i class="bi bi-arrow-return-right pe-2"></i>Time Management</li>
+													<li><i class="bi bi-arrow-return-right pe-2"></i>Problem Solving</li>
+												</ul>
+											</div>
+											<div class="col-12 col-md-6">
+												<h6 class="text-uppercase border-bottom border-light border-opacity-25 mb-2 pb-1"><i class="bi bi-gear-fill pe-2"></i>Hard Skills</h6>
+												<div class="d-flex flex-wrap justify-content-evenly justify-content-md-between align-content-center gap-1 border-bottom border-light border-opacity-25 pb-2">
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3"><i class="bi bi-apple pe-2"></i>macOS</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Web Accessibility</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">SEO</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Responsive Development</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">QA Testing</p>
+												</div>
+												<div class="d-flex flex-wrap justify-content-evenly justify-content-md-between align-content-center gap-1 pt-2">
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">SVN</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Git</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">HTML</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">CSS</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">JSON</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">PHP</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<h5 class="text-uppercase fw-medium d-flex align-items-center border-bottom border-light border-opacity-25 mb-1"><i class="bi bi-lightbulb text-yellow small me-1"></i>Innovation Developer</h5>
+										<div class="d-flex justify-content-between align-items-start mb-3">
+											<p class="text-yellow nowrap mb-0"><a class="text-pink" href="https://bsg.global/" target="_blank">Blue Star Group<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+											<p class="opacity-75 small text-end mb-0">September&ndash;October 2021</p>
+										</div>
+										<div class="row">
+											<div class="col-12 col-md-6">
+												<h6 class="text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><i class="bi bi-person-fill pe-2"></i>Soft Skills</h6>
+												<ul class="list-unstyled opacity-75 ps-1">
+													<li><i class="bi bi-arrow-return-right pe-2"></i>Creativity</li>
+													<li><i class="bi bi-arrow-return-right pe-2"></i>Attention to Detail</li>
+													<li><i class="bi bi-arrow-return-right pe-2"></i>Critical Thinking</li>
+													<li><i class="bi bi-arrow-return-right pe-2"></i>Problem Solving</li>
+												</ul>
+											</div>
+											<div class="col-12 col-md-6">
+												<h6 class="text-uppercase border-bottom border-light border-opacity-25 mb-2 pb-1"><i class="bi bi-gear-fill pe-2"></i>Hard Skills</h6>
+												<div class="d-flex flex-wrap justify-content-evenly justify-content-md-between align-content-center gap-1 pb-2">
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3"><i class="bi bi-windows pe-2"></i>Windows</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Google Docs Editors</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Microsoft 365</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Adobe Photoshop</p>
+													<p class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Adobe Illustrator</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item mb-4">
+							<h2 class="accordion-header">
+								<button class="accordion-button fw-medium rounded-pill collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseLearning" aria-expanded="false" aria-controls="panelsStayOpen-collapseLearning">
+									<i class="bi bi-mortarboard-fill me-2"></i>Learning
+								</button>
+							</h2>
+							<div id="panelsStayOpen-collapseLearning" class="accordion-collapse collapse" data-bs-parent="#AboutMeAccordion">
+								<div class="accordion-body">
+									<h4 class="f-one border-bottom border-light border-opacity-25 mt-3 mb-4"><i class="bi bi-book me-2"></i>Basic Learning</h4>
+									<div class="row">
+										<div class="col-12 col-md-6 mb-4">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-award-fill me-2"></i>JAVA</span> Programming</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://www.utn.edu.ar/es/" target="_blank">UTN<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">August&ndash;December 2021</p>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 mb-4">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-award-fill me-2"></i>Python</span> Programming</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small mb-0"><a class="text-pink" href="https://www.linkedin.com/learning/" target="_blank">LinkedIn <span class="nowrap">Learning<i class="bi bi-arrow-up-right ms-1"></i></a></span></p>
+												<p class="opacity-75 small text-end mb-0">October 2021</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-6 mb-4">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-award-fill me-2"></i>Full&#x2011;Stack</span> Development</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small mb-0"><a class="text-pink" href="https://talentotech.bue.edu.ar/" target="_blank">Codo a <span class="nowrap">Codo<i class="bi bi-arrow-up-right ms-1"></i></a></span></p>
+												<p class="opacity-75 small text-end mb-0">April&ndash;August 2021</p>
+											</div>
+											<ul class="list-unstyled d-flex flex-wrap justify-content-evenly justify-content-md-between align-items-center gap-1">
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">HTML</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">CSS</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">JavaScript</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Bootstrap</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Git</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">PHP</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">AJAX</li>
+											</ul>
+										</div>
+										<div class="col-12 col-md-6 mb-4">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-award-fill me-2"></i>Back&#x2011;End</span> Web Development</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://www.lewagon.com/" target="_blank">Le Wagon<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">May&ndash;June 2021</p>
+											</div>
+											<ul class="list-unstyled d-flex flex-wrap justify-content-evenly justify-content-md-between align-items-center gap-1">
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Programming Logic</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Ruby</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-6 mb-4">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-award-fill me-2"></i>Front&#x2011;End</span> Development</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://digitalbluee.com/" target="_blank">DigitalBluee<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">March&ndash;June 2021</p>
+											</div>
+											<ul class="list-unstyled d-flex flex-wrap justify-content-evenly justify-content-md-between align-items-center gap-1">
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">HTML</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">CSS</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">JavaScript</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Bootstrap</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">AJAX</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">JSON</li>
+											</ul>
+										</div>
+										<div class="col-12 col-md-6 mb-4">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-award-fill me-2"></i>React</span> Bootcamp</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://qubika.com/mooveit/" target="_blank">Moove It<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">May 2021</p>
+											</div>
+											<ul class="list-unstyled d-flex flex-wrap justify-content-evenly justify-content-md-between align-items-center gap-1">
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">HTML</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">JavaScript</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">React</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Git</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-6 mb-4">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-award-fill me-2"></i>WordPress</span></h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://wpmagnum.com/" target="_blank">WP Magnum<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">February 2021</p>
+											</div>
+										</div>
+									</div>
+
+									<h4 class="f-one border-bottom border-light border-opacity-25 mt-3 mb-4"><i class="bi bi-journal-bookmark-fill me-2"></i>Complementary Learning</h4>
+									<div class="row">
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-bookmark-fill small me-2"></i>Linux</span></h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small mb-0"><a class="text-pink" href="https://www.netdevgroup.com/" target="_blank">Network Development <span class="nowrap">Group<i class="bi bi-arrow-up-right ms-1"></i></span></a></p>
+												<p class="opacity-75 small text-end mb-0">March&ndash;June 2021</p>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-bookmark-fill small me-2"></i>Cybersecurity</span> for Web Apps</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://www.educacionit.com/" target="_blank">EducaciónIT<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">May 2021</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-bookmark-fill small me-1"></i>.NET</span></h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://www.educacionit.com/" target="_blank">EducaciónIT<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">May 2021</p>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-bookmark-fill small me-2"></i>ChatBot</span> Programming</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://sendpulse.com/" target="_blank">SendPulse<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">March 2021</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><i class="bi bi-bookmark-fill text-yellow small me-2"></i>Web Scraping with <span class="text-yellow">Python</span></h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://www.lewagon.com/" target="_blank">Le Wagon<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">March 2021</p>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-bookmark-fill small me-2"></i>Cybersecurity</span></h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://bedu.org/" target="_blank">BEDU<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">March 2021</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><i class="bi bi-bookmark-fill text-yellow small me-2"></i>Automation with <span class="text-yellow text-capitalize">APIs</span></h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://www.lewagon.com/" target="_blank">Le Wagon<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">March 2021</p>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><i class="bi bi-bookmark-fill text-yellow small me-2"></i>Data Analytics with <span class="text-yellow">Python</span></h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://www.lewagon.com/" target="_blank">Le Wagon<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">March 2021</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-bookmark-fill small me-2"></i>JavaScript</span> Web Development</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://bedu.org/" target="_blank">BEDU<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">March 2021</p>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><span class="text-yellow"><i class="bi bi-bookmark-fill small me-2"></i>Android</span> Programming</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://www.educacionit.com/" target="_blank">EducaciónIT<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">March 2021</p>
+											</div>
+										</div>
+									</div>
+
+									<h4 class="f-one border-bottom border-light border-opacity-25 mt-3 mb-4"><i class="bi bi-journal me-2"></i>Partial Studies</h4>
+									<div class="row">
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><i class="bi bi-bookmark small text-yellow me-2"></i>QA Testing</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small mb-0"><a class="text-pink" href="https://talentotech.bue.edu.ar/" target="_blank">Codo a <span class="nowrap">Codo<i class="bi bi-arrow-up-right ms-1"></i></a></span></p>
+												<p class="opacity-75 small text-end mb-0">August&ndash;December 2021</p>
+											</div>
+											<ul class="list-unstyled d-flex flex-wrap justify-content-evenly justify-content-md-between align-items-center gap-1">
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Databases</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">SLQ</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">MySQL</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">UAT</li>
+												<li class="badge fw-normal border rounded-pill border-light border-opacity-25 mb-0 px-3">Static Testing</li>
+											</ul>
+										</div>
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><i class="bi bi-bookmark small text-yellow me-2"></i>Public Translator in English</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://www.fahce.unlp.edu.ar/" target="_blank">FAHCE<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">2018</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><i class="bi bi-bookmark small text-yellow me-2"></i>English Language and Literature Teaching</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://www.fahce.unlp.edu.ar/" target="_blank">FAHCE<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">2017&ndash;2018</p>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 mb-3">
+											<h6 class="fw-semibold text-uppercase border-bottom border-light border-opacity-25 mb-1 pb-1"><i class="bi bi-bookmark small text-yellow me-2"></i>Visual Communication Design</h6>
+											<div class="d-flex justify-content-between align-items-start mb-3">
+												<p class="small nowrap mb-0"><a class="text-pink" href="https://fba.unlp.edu.ar/" target="_blank">FBA<i class="bi bi-arrow-up-right ms-1"></i></a></p>
+												<p class="opacity-75 small text-end mb-0">2015&ndash;2016</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="nav-porfolio" role="tabpanel" aria-labelledby="nav-porfolio-tab" tabindex="0">
+				<div class="col-12 col-lg-10 col-xl-8 col-xxl-6 d-flex flex-wrap mx-auto mt-4">
+					<div class="row mb-4">
+						<div class="col anim-fade-in-1">
+							<div class="card bg-body-tertiary border-0 rounded-4">
+								<div class="row g-0">
+									<div class="col-md-4">
+										<img src="./images/portrait-art-1.png" class="img-fluid rounded-start" alt=" ">
+									</div>
+									<div class="col-md-8 d-flex align-items-center">
+										<div class="card-body pe-4">
+											<h5 class="card-title f-one h4 border-bottom border-light border-opacity-25 mb-0">My CV Webpage</h5>
+											<div class="card-text">
+												<p class="small text-end opacity-75 mb-1">May 2025</p>
+												<p>Built with <i class="bi bi-suit-heart-fill small me-1"></i>love and <a class="text-pink" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, using HTML, CSS, and JavaScript&mdash;then enhanced with <a class="text-pink" href="https://ianlunn.github.io/Hover/" target="_blank">Hover.css</a>, <a class="text-pink" href="https://animista.net/" target="_blank">Animista</a> and <a class="text-pink" href="https://superdesigner.co/" target="_blank">Super Designer</a>.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p class="small text-center opacity-75 mb-0">Image created with <a class="text-pink" href="https://picrew.me/en/" target="_blank">Picrew</a>’s “<a class="text-pink" href="https://picrew.me/en/image_maker/2288696" target="_blank">character maker! ✦ by veluv</a>”</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-6 anim-fade-in-2">
+							<div class="card bg-body-tertiary border-0 rounded-4">
+								<img src="./images/digital-book.jpg" class="card-img-top rounded-4 rounded-bottom-0" alt=" ">
+								<div class="card-body p-4">
+									<h5 class="card-title f-one h4 border-bottom border-light border-opacity-25 mb-0">Online Library</h5>
+									<div class="card-text">
+										<p class="small text-end opacity-75 mb-1">August 2021</p>
+										<p>Inspired by <a class="text-pink" href="https://www.gutenberg.org/" target="_blank">Project Gutenberg</a>&mdash;an online library of free eBooks&mdash;I created this webpage as my final project for the <a class="text-pink" href="https://talentotech.bue.edu.ar/" target="_blank">Codo a Codo</a> Full&#x2011;Stack course.</p>
+										<p class="text-center mt-5">
+											<a class="btn btn-outline-yellow rounded-pill py-2 px-4" href="https://agustina-dz.github.io/main-page_codo-a-codo_front/" target="_blank">Take a look</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<p class="small text-center opacity-75">Photo by <a class="text-pink" href="https://pixabay.com/users/perfecto_capucine-9573466/" target="_blank">Perfecto_Capucine</a> on <a class="text-pink" href="https://pixabay.com/photos/winter-fall-table-drink-book-read-3723740/" target="_blank">Pixabay</a></p>
+						</div>
+						<div class="col-12 col-md-6 anim-fade-in-3">
+							<div class="card bg-body-tertiary border-0 rounded-4">
+								<img src="./images/people.jpg" class="card-img-top rounded-4 rounded-bottom-0" alt=" ">
+								<div class="card-body p-4">
+									<h5 class="card-title f-one h4 border-bottom border-light border-opacity-25 mb-0">SO Pink! Blog</h5>
+									<div class="card-text">
+										<p class="small text-end opacity-75 mb-1">June 2021</p>
+										<p>I created my first webpage using Bootstrap during the <a class="text-pink" href="https://digitalbluee.com/" target="_blank">DigitalBluee</a> Front&#x2011;End course&mdash;a project that sparked my passion for Web Development.</p>
+										<p class="text-center mt-5">
+											<a class="btn btn-outline-yellow rounded-pill py-2 px-4" href="https://agustina-dz.github.io/Practica_Bootstrap/" target="_blank">Take a look</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<p class="small text-center opacity-75">Photo by <a class="text-pink" href="https://unsplash.com/@priscilladupreez" target="_blank">Priscilla Du Preez</a> on <a class="text-pink" href="https://unsplash.com/photos/people-laughing-and-talking-outside-during-daytime-nF8xhLMmg0c" target="_blank">Unsplash</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+				<div class="col-12 col-lg-10 col-xl-8 col-xxl-6 mx-auto">
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<img class="img-fluid border-bottom border-light border-opacity-25" src="./images/portrait-art-2.png" alt=" ">
+							<p class="d-md-none text-center small opacity-75 mb-0">Image created with <a class="text-pink" href="https://picrew.me/en/" target="_blank">Picrew</a>’s “<a class="text-pink" href="https://picrew.me/en/image_maker/2288696" target="_blank">character maker! ✦ by veluv</a>”</p>
+						</div>
+						<div class="col-12 col-md-6 d-flex flex-column justify-content-end align-items-center align-items-md-start mt-4 mt-md-0 px-3">
+							<h3 class="f-one">Agustina Díaz</h3>
+							<hr class="w-100 mt-0 mb-2" />
+							<ul class="list-unstyled mb-0">
+								<li class="list-item nowrap">
+									<i class="bi bi-envelope-fill me-2"></i><a class="fst-italic link-light link-underline-opacity-0 link-underline-opacity-50-hover" href="mailto:agustina.dz@hotmail.com" target="_blank">agustina.dz@hotmail.com<i class="bi bi-arrow-up-right ms-1"></i></a>
+								</li>
+								<li class="list-item nowrap">
+									<i class="bi bi-linkedin me-2"></i><a class="fst-italic link-light link-underline-opacity-0 link-underline-opacity-50-hover" href="https://www.linkedin.com/in/agustina-dz/" target="_blank">agustina-dz<i class="bi bi-arrow-up-right ms-1"></i></a>
+								</li>
+								<li class="list-item nowrap">
+									<i class="bi bi-github me-2"></i><a class="fst-italic link-light link-underline-opacity-0 link-underline-opacity-50-hover" href="https://github.com/agustina-dz" target="_blank">agustina-dz<i class="bi bi-arrow-up-right ms-1"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row d-none d-md-block">
+						<div class="col-6 text-center">
+							<p class="small opacity-75">Image created with <a class="text-pink" href="https://picrew.me/en/" target="_blank">Picrew</a>’s<br /> "<a class="text-pink" href="https://picrew.me/en/image_maker/2288696" target="_blank">character maker! ✦ by veluv</a>”</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div id="back-to-top-btn" class="fixed-bottom d-flex flex-lg-column justify-content-center align-items-center rounded-pill fit-content bg-dark bg-lg-transparent mx-auto mx-lg-0 ms-lg-auto me-lg-3 me-lg-5 mb-4 py-2 py-lg-0 px-3 px-lg-0 d-none">
+		<button type="button" class="btn d-flex align-items-center rounded-pill fit-content ar-square bg-yellow p-1 me-2 me-lg-0 mb-lg-2"><i class="bi bi-caret-up-fill text-dark"></i></button>
+		<p class="fw-medium mb-0">Back to Top</p>
+	</div>
+
+	<hr />
+	<footer class="container-fluid small opacity-75 mb-5 mb-md-0 pt-3 pb-5">
+		<p class="mb-0">Special thanks to the creators of the resources used to build this webpage:</p>
+		<ul class="list-unstyled">
+			<li>
+				<i class="bi bi-suit-heart small me-1"></i>
+				<a class="text-pink" href="https://getbootstrap.com/docs/5.3/about/team/" target="_blank">Bootstrap team</a> <i class="bi bi-caret-right small"></i> <a class="text-pink" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+			</li>
+			<li>
+				<i class="bi bi-suit-heart small me-1"></i>
+				<a class="text-pink" href="https://www.instagram.com/veluv_art/" target="_blank">Luciana (@veluv_art)</a> <i class="bi bi-caret-right small"></i> <a class="text-pink" href="https://picrew.me/en/" target="_blank">Picrew</a>’s “<a class="text-pink" href="https://picrew.me/en/image_maker/2288696" target="_blank">character maker! ✦ by veluv</a>”
+			</li>
+			<li>
+				<i class="bi bi-suit-heart small me-1"></i>
+				<a class="text-pink" href="https://ianlunn.co.uk/" target="_blank">Ian Lunn</a> <i class="bi bi-caret-right small"></i> <a class="text-pink" href="https://ianlunn.github.io/Hover/" target="_blank">Hover.css</a>
+			</li>
+			<li>
+				<i class="bi bi-suit-heart small me-1"></i>
+				<a class="text-pink" href="https://anatravas.me/" target="_blank">Ana Travas</a> <i class="bi bi-caret-right small"></i> <a class="text-pink" href="https://animista.net/" target="_blank">Animista</a>
+			</li>
+			<li>
+				<i class="bi bi-suit-heart small me-1"></i>
+				<a class="text-pink" href="http://twitter.com/dilpreetsio" target="_blank">Dilpreet</a> <i class="bi bi-caret-right small"></i> <a class="text-pink" href="https://superdesigner.co/" target="_blank">Super Designer</a>
+			</li>
+		</ul>
+
+	</footer>
+
+	<!-- popper -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+	<!-- bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+
+	<!-- custom -->
+	<script src="./scripts/main.js" type="text/javascript"></script>
+
+</body>
+</html>
